@@ -15,6 +15,7 @@ public class MyController {
     @Autowired
     private CourseService courseService;  // adding @autowired will simply make the object of CourseServiceImpl class,
     // as we know that we can not make an object of CourseService because it is an interface
+    
     @GetMapping("/home")
     public String home(){
 
@@ -80,7 +81,6 @@ headers, and body. As a result, we can use it to fully configure the HTTP respon
 If we want to use it, we have to return it from the endpoint; Spring takes care of the rest.
 
 ResponseEntity is a generic type. Consequently, we can use any type as the response body:
-
 
  */
 
